@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-AMAZON_E_COMMERCE" class="navigator-link">
+              <span class="suite-name border-failed">AMAZON E-COMMERCE</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-AMAZON_E_COMMERCE" class="navigator-link ">
+                    <span>C:\Users\shrey\eclipse-workspace\MavenProjectTest\amazon_Ecommerce.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-AMAZON_E_COMMERCE" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-AMAZON_E_COMMERCE" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-AMAZON_E_COMMERCE" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-AMAZON_E_COMMERCE" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-AMAZON_E_COMMERCE" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-AMAZON_E_COMMERCE" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AMAZON_E_COMMERCE" class="hide-methods failed suite-AMAZON_E_COMMERCE"> (hide)</a> <!-- hide-methods failed suite-AMAZON_E_COMMERCE -->
+                      <a href="#" panel-name="suite-AMAZON_E_COMMERCE" class="show-methods failed suite-AMAZON_E_COMMERCE"> (show)</a> <!-- show-methods failed suite-AMAZON_E_COMMERCE -->
+                    </span>
+                    <div class="method-list-content failed suite-AMAZON_E_COMMERCE">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AMAZON_E_COMMERCE" title="AmazonEcommerse.selectandcheckout" class="method navigator-link" hash-for-method="checkOut">checkOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AMAZON_E_COMMERCE -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-AMAZON_E_COMMERCE" class="hide-methods passed suite-AMAZON_E_COMMERCE"> (hide)</a> <!-- hide-methods passed suite-AMAZON_E_COMMERCE -->
+                      <a href="#" panel-name="suite-AMAZON_E_COMMERCE" class="show-methods passed suite-AMAZON_E_COMMERCE"> (show)</a> <!-- show-methods passed suite-AMAZON_E_COMMERCE -->
+                    </span>
+                    <div class="method-list-content passed suite-AMAZON_E_COMMERCE">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AMAZON_E_COMMERCE" title="AmazonEcommerse.selectandcheckout" class="method navigator-link" hash-for-method="addAddress">addAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AMAZON_E_COMMERCE" title="AmazonEcommerse.selectandcheckout" class="method navigator-link" hash-for-method="addToCart">addToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AMAZON_E_COMMERCE" title="AmazonEcommerse.addToWishList" class="method navigator-link" hash-for-method="addToWishL">addToWishL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AMAZON_E_COMMERCE" title="AmazonEcommerse.addToWishList" class="method navigator-link" hash-for-method="applyFilter">applyFilter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AMAZON_E_COMMERCE" title="AmazonEcommerse.addToWishList" class="method navigator-link" hash-for-method="navigatingToProducts">navigatingToProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AMAZON_E_COMMERCE" title="AmazonEcommerse.selectandcheckout" class="method navigator-link" hash-for-method="searchProductUsingSearchBox">searchProductUsingSearchBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AMAZON_E_COMMERCE -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AMAZON_E_COMMERCE" class="panel AMAZON_E_COMMERCE">
+          <div class="suite-AMAZON_E_COMMERCE-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">AmazonEcommerse.selectandcheckout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkOut">
+                  </a> <!-- checkOut -->
+                  <span class="method-name">checkOut</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;pp-s1pSMP-118&apos;]&quot;}
+  (Session info: chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-KVTVDHCK&apos;, ip: &apos;192.168.0.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\shrey\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50106}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d82838a0954cb42bdfa9a91d842dfd43
+*** Element info: {Using=xpath, value=//input[@id=&apos;pp-s1pSMP-118&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at AmazonEcommerse.selectandcheckout.checkOut(selectandcheckout.java:105)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:831)
+... Removed 17 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AMAZON_E_COMMERCE-class-failed -->
+          <div class="suite-AMAZON_E_COMMERCE-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AmazonEcommerse.selectandcheckout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addAddress">
+                  </a> <!-- addAddress -->
+                  <span class="method-name">addAddress</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToCart">
+                  </a> <!-- addToCart -->
+                  <span class="method-name">addToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProductUsingSearchBox">
+                  </a> <!-- searchProductUsingSearchBox -->
+                  <span class="method-name">searchProductUsingSearchBox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AMAZON_E_COMMERCE-class-passed -->
+          <div class="suite-AMAZON_E_COMMERCE-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">AmazonEcommerse.addToWishList</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToWishL">
+                  </a> <!-- addToWishL -->
+                  <span class="method-name">addToWishL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="applyFilter">
+                  </a> <!-- applyFilter -->
+                  <span class="method-name">applyFilter</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigatingToProducts">
+                  </a> <!-- navigatingToProducts -->
+                  <span class="method-name">navigatingToProducts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AMAZON_E_COMMERCE-class-passed -->
+        </div> <!-- panel AMAZON_E_COMMERCE -->
+        <div panel-name="test-xml-AMAZON_E_COMMERCE" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\shrey\eclipse-workspace\MavenProjectTest\amazon_Ecommerce.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;AMAZON E-COMMERCE&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;methods&quot; name=&quot;Add To Wish List&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;AmazonEcommerse.addToWishList&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Add To Wish List --&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;methods&quot; name=&quot;Select Item and check out&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;AmazonEcommerse.selectandcheckout&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Select Item and check out --&gt;
+&lt;/suite&gt; &lt;!-- AMAZON E-COMMERCE --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AMAZON_E_COMMERCE" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AMAZON E-COMMERCE</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Add To Wish List (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Select Item and check out (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AMAZON_E_COMMERCE" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AMAZON E-COMMERCE</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AMAZON_E_COMMERCE" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AMAZON E-COMMERCE</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AMAZON_E_COMMERCE');
+function tableData_AMAZON_E_COMMERCE() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'addToWishL')
+data.setCell(0, 2, 'AmazonEcommerse.addToWishList')
+data.setCell(0, 3, 12695);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'applyFilter')
+data.setCell(1, 2, 'AmazonEcommerse.addToWishList')
+data.setCell(1, 3, 12528);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addToCart')
+data.setCell(2, 2, 'AmazonEcommerse.selectandcheckout')
+data.setCell(2, 3, 9297);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'navigatingToProducts')
+data.setCell(3, 2, 'AmazonEcommerse.addToWishList')
+data.setCell(3, 3, 8947);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'checkOut')
+data.setCell(4, 2, 'AmazonEcommerse.selectandcheckout')
+data.setCell(4, 3, 7397);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'searchProductUsingSearchBox')
+data.setCell(5, 2, 'AmazonEcommerse.selectandcheckout')
+data.setCell(5, 3, 5297);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'addAddress')
+data.setCell(6, 2, 'AmazonEcommerse.selectandcheckout')
+data.setCell(6, 3, 2057);
+window.suiteTableData['AMAZON_E_COMMERCE']= { tableData: data, tableDiv: 'times-div-AMAZON_E_COMMERCE'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 58 seconds</span>
+              <div id="times-div-AMAZON_E_COMMERCE">
+              </div> <!-- times-div-AMAZON_E_COMMERCE -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AMAZON_E_COMMERCE" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AMAZON E-COMMERCE</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AMAZON_E_COMMERCE" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AMAZON_E_COMMERCE" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">AmazonEcommerse.addToWishList</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchWebsite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">navigatingToProducts</span>
+                <span class="method-start">10731 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">applyFilter</span>
+                <span class="method-start">19685 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addToWishL</span>
+                <span class="method-start">32215 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">AmazonEcommerse.selectandcheckout</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">windowhandling</span>
+                <span class="method-start">45012 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">searchProductUsingSearchBox</span>
+                <span class="method-start">45015 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addToCart</span>
+                <span class="method-start">50319 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addAddress</span>
+                <span class="method-start">59618 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkOut</span>
+                <span class="method-start">61677 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">closeWindow</span>
+                <span class="method-start">69114 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

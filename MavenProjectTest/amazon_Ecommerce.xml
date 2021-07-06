@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AMAZON E-COMMERCE" parallel = "methods" thread-count="2">
+  <test thread-count="1" name="Add To Wish List">
+    <classes>
+      <class name="AmazonEcommerse.addToWishList">
+      </class>   
+    </classes>
+  </test>
+    <test thread-count="1" name="Select Item and check out">
+    <classes>
+      <class name="AmazonEcommerse.selectandcheckout">
+      </class>   
+    </classes>
+  </test>  <!-- Test -->
+</suite> <!-- Suite -->
