@@ -3,13 +3,13 @@
 <suite name="AMAZON E-COMMERCE" parallel = "methods" thread-count="2">
   <test thread-count="1" name="Add To Wish List">
     <classes>
-      <class name="AmazonEcommerse.addToWishList">
+      <class name="Amazon_test.addToWishList">
       </class>   
     </classes>
   </test>
     <test thread-count="1" name="Select Item and check out">
     <classes>
-      <class name="AmazonEcommerse.selectandcheckout">
+      <class name="Amazon_test.selectandcheckout">
       </class>   
     </classes>
   </test>  <!-- Test -->
