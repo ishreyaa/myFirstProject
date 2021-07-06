@@ -87,20 +87,20 @@ WebElement menu = driver.findElement(By.xpath("//header/div[@id='navbar']/div[@i
 	}
 	
 	@Test(priority = 2)
-	void applyFilter()
+	void applyFilter() throws InterruptedException
 	{
 		WebElement catogory = new WebDriverWait(driver,20).until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),'Dresses & Jumpsuits')]")));
 		catogory.click();
-		
+		Thread.sleep(1500);
 		WebElement cod = new WebDriverWait(driver,10).until(ExpectedConditions.elementToBeClickable(By.linkText("Eligible for Pay On Delivery")));
 		cod.click();
-		
+		Thread.sleep(1500);
 		WebElement mediumsize = new WebDriverWait(driver,20).until(ExpectedConditions.elementToBeClickable(By.xpath("//li[@id='p_n_size_five_browse-vebin/1975367031']")));
 		mediumsize.click();
-		
+		Thread.sleep(1500);
 		WebElement colour = new WebDriverWait(driver,10).until(ExpectedConditions.elementToBeClickable(By.xpath("//li[@id='p_n_size_two_browse-vebin/1975328031']")));
 		colour.click();
-		
+		Thread.sleep(1500);
 		WebElement product = new WebDriverWait(driver,20).until(ExpectedConditions.elementToBeClickable(By.xpath("//body/div[@id='a-page']/div[@id='search']/div[1]/div[1]/div[1]/div[1]/span[3]/div[2]/div[11]/div[1]/span[1]/div[1]/div[1]/div[2]")));
 		product.click();
 		
@@ -126,7 +126,7 @@ WebElement menu = driver.findElement(By.xpath("//header/div[@id='navbar']/div[@i
 		add.click();
 		
 		WebElement close = new WebDriverWait(driver,20).until(ExpectedConditions.elementToBeClickable(By.xpath("//header/button[1]")));
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		Actions act = new Actions(driver);
 		act.doubleClick(close).perform();
 	}
